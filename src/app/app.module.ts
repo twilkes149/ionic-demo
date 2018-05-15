@@ -6,11 +6,11 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { NewPage } from '../pages/newPage/newPage';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { HTTP } from '@ionic-native/http';
 import { HttpModule } from '@angular/http';
 
 @NgModule({
@@ -19,6 +19,7 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
+    NewPage,
     TabsPage
   ],
   imports: [
@@ -32,12 +33,12 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
+    NewPage,
     TabsPage
   ],
   providers: [
     StatusBar,
-    SplashScreen,
-    HTTP,    
+    SplashScreen,    
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

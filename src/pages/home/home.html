@@ -7,9 +7,14 @@
 <ion-content padding>
   <h2>Welcome to Ionic!</h2>
   <ion-item class="borderRadius item item-input">
-    <ion-label fixed>Type something:</ion-label>
+    <ion-label fixed>Input:</ion-label>
       <ion-input type="text" value="" [(ngModel)]="something"></ion-input>
   </ion-item>
 
   <p>Here is your text: {{something}}</p>
+
+  <div class="spacer" style="width: 300px; height: 15px;"></div>
+
+  <button ion-button full id="button" class="borderRadius" (click)="buttonClicked()">Click me!</button>
+
 </ion-content>
